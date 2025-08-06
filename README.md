@@ -1,59 +1,79 @@
-**Onion Price Prediction Web Application**
+# Onion Price Prediction Web Application
+
 This web application predicts future onion prices using LSTM (Long Short-Term Memory) machine learning model based on historical price data. The application features a user-friendly interface with multi-language support (English, Hindi, and Marathi).
 
-**Features**
-LSTM-based price prediction model
-Interactive web interface
-Multi-language support (English, Hindi, Marathi)
-Date-based price predictions
-Responsive design
-Beautiful UI with hover effects
+## Features
 
-**Prerequisites**
-Python 3.8 or higher
-Virtual Environment (recommended)
+- LSTM-based price prediction model
+- Interactive web interface
+- Multi-language support (English, Hindi, Marathi)
+- Date-based price predictions
+- Responsive design
+- Beautiful UI with hover effects
 
-**Installation**
-Clone the repository:
+## Prerequisites
+
+- Python 3.8 or higher
+- Virtual Environment (recommended)
+
+## Installation
+
+1. Clone the repository:
+```bash
 git clone <repository-url>
 cd <repository-name>
-Create and activate a virtual environment:
+```
+
+2. Create and activate a virtual environment:
+```bash
 python -m venv .venv
 # On Windows
 .venv\Scripts\activate
 # On Unix or MacOS
 source .venv/bin/activate
-Install the required packages:
+```
+
+3. Install the required packages:
+```bash
 pip install -r requirements.txt
+```
 
-**Usage**
-Make sure your virtual environment is activated
+## Usage
 
-Run the Flask application:
+1. Make sure your virtual environment is activated
 
+2. Run the Flask application:
+```bash
 python app.py
-Open your web browser and navigate to:
+```
+
+3. Open your web browser and navigate to:
+```
 http://localhost:5000
-Select a future date and click "Predict Price" to see the predicted onion prices
+```
 
-**Project Structure**
-app.py - Main Flask application with LSTM model implementation
-dataset.csv - Historical onion price data
-templates/index.html - Frontend web interface
-requirements.txt - Python package dependencies
+4. Select a future date and click "Predict Price" to see the predicted onion prices
 
-**Model Details**
+## Project Structure
+
+- `app.py` - Main Flask application with LSTM model implementation
+- `dataset.csv` - Historical onion price data
+- `templates/index.html` - Frontend web interface
+- `requirements.txt` - Python package dependencies
+
+## Model Details
+
 The application uses an LSTM (Long Short-Term Memory) neural network to predict future onion prices. The model:
+- Uses 60 days of historical data to predict future prices
+- Is trained on daily price data
+- Updates predictions in real-time
+- Normalizes data for better prediction accuracy
 
-Uses 60 days of historical data to predict future prices
-Is trained on daily price data
-Updates predictions in real-time
-Normalizes data for better prediction accuracy
+## Translation Support
 
-**Translation Support**
 The application supports three languages:
+- English (default)
+- Hindi
+- Marathi
 
-English (default)
-Hindi
-Marathi
-Users can switch between languages using the language selector in the top-right corner of the page.
+Users can switch between languages using the language selector in the top-right corner of the page. 
